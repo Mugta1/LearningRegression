@@ -5,8 +5,9 @@ x_train=np.array([1.0, 1.7, 2.0, 2.5, 3.0, 3.2])
 y_train=np.array([250, 300, 480,  430, 630, 730])
 
 
-#w and b are called weights of the linear regression model.
 
+#w and b are called weights of the linear regression model.
+#instead of using loops to calculate the sum, we can vectorize and use np.sum to find the values.
 #Function that returns mean squared error called cost of the model
 def cost(x,y,w,b):
     m=x.shape[0]
@@ -24,6 +25,7 @@ def dj_dw(x,y,w,b):
         dj_dw+=(w*x[i]+b-y[i])*x[i]
     dj_dw= dj_dw/m
     return dj_dw
+    
 #Computing the derivative of the cost function with respect to b
 def dj_db(x,y,w,b):
     m=x.shape[0]
