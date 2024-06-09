@@ -12,7 +12,7 @@ def cost(x,y,w,b):
     m=x.shape[0]
     error=0
     for i in range(len(x)):
-        error+=(w*x[i]+b-y[i])**2
+        error+=(w*x[i]+b-y[i])**2 #squared mean error 
     cost=error/(2*m)
     return cost
 
@@ -50,9 +50,11 @@ def gradient(x,y,w,b,a,itr):
 def finalfunc(x,y,w,b,a,itr):
     
     final_w,final_b=gradient(x,y,w,b,a,itr)
+    #Printing the results of linear regression
     print(f'the value of w is {final_w}')
     print(f'the value of b is {final_b}')
     print(f'the cost of this function is {cost(x,y, final_w, final_b)}')
+    #Using the results of linear regression to find values. 
     while True:
 
         user=float(input("For what area of house would you like to find the selling price?"))
@@ -65,7 +67,7 @@ def finalfunc(x,y,w,b,a,itr):
             print(f"the selling price of a house with area {user} is equal to {final_w*user+b}")
             break
 
-#Calling the final function 
+#Calling the final function
 finalfunc(x_train,y_train,200,100,0.1,3773)
 
 #You can input your own values for w,b,a,itr
