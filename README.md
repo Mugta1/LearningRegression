@@ -1,6 +1,6 @@
 # Linear Regression with Gradient Descent
 
-This repository contains Python code for implementing linear regression using gradient descent.
+This repository contains Python code for implementing linear regression using gradient descent. Regards to Andrew NG for his course on machine learning 
 
 ## Overview
 
