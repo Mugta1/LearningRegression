@@ -7,7 +7,7 @@ This repository contains Python code for implementing linear regression using gr
 Linear regression is a powerful statistical method that models the relationship between a dependent variable and one or more independent variables. It's widely used in various fields such as economics, finance, and machine learning for tasks like predicting house prices, stock prices, and more.
 
 This code implements linear regression and gradient descent from scratch using NumPy, a popular library for numerical computing in Python. The implementation includes functions to calculate the cost, gradients, and update weights and biases using gradient descent.
-
+ 
 ## How it Works
 
 1. **Input Data**: Provide training data `x_train` and corresponding labels `y_train`. These represent the features (independent variables) and target variable (dependent variable) respectively.
